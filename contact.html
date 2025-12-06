@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Learner Bootstrap Template</title>
+  <title>Contact - Learner Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -35,7 +35,7 @@
   ======================================================== -->
 </head>
 
-<body class="about-page">
+<body class="contact-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -49,7 +49,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="instructors.html">Instructors</a></li>
           <li><a href="pricing.html">Pricing</a></li>
@@ -83,7 +83,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -98,114 +98,109 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">About</h1>
+        <h1 class="mb-2 mb-lg-0">Contact</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li class="current">Contact</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/education/education-square-2.webp" alt="About Us" class="img-fluid rounded-4">
+        <div class="contact-main-wrapper">
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-content">
-              <span class="subtitle">About Us</span>
-              <h2>Empowering Future Leaders Through Quality Education</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div class="stats-row">
-                <div class="stats-item">
-                  <span class="count">15</span>
-                  <p>Years of Experience</p>
+
+          <div class="contact-content">
+            <div class="contact-cards-container" data-aos="fade-up" data-aos-delay="300">
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
                 </div>
-                <div class="stats-item">
-                  <span class="count">200+</span>
-                  <p>Expert Instructors</p>
-                </div>
-                <div class="stats-item">
-                  <span class="count">50k+</span>
-                  <p>Students Worldwide</p>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>8721 Broadway Avenue, New York, NY 10023</p>
                 </div>
               </div>
+
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>info@examplecompany.com</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Call</h4>
+                  <p>+1 (212) 555-7890</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="icon-box">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Open Hours</h4>
+                  <p>Monday-Friday: 9AM - 6PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
+              <h3>Get in Touch</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit">Send Message</button>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-
-        <div class="row mt-5 pt-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-bullseye"></i>
-              </div>
-              <h3>Our Mission</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-eye"></i>
-              </div>
-              <h3>Our Vision</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-award"></i>
-              </div>
-              <h3>Our Values</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5 pt-3 align-items-center">
-          <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
-            <div class="achievements">
-              <span class="subtitle">Why Choose Us</span>
-              <h2>Transforming Education for a Better Tomorrow</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-              <ul class="achievements-list">
-                <li><i class="bi bi-check-circle-fill"></i> Flexible learning options and schedules</li>
-                <li><i class="bi bi-check-circle-fill"></i> Industry-experienced instructors</li>
-                <li><i class="bi bi-check-circle-fill"></i> Interactive and engaging course content</li>
-                <li><i class="bi bi-check-circle-fill"></i> Career guidance and placement support</li>
-                <li><i class="bi bi-check-circle-fill"></i> State-of-the-art online learning platform</li>
-              </ul>
-              <a href="#" class="btn-explore">Discover More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-gallery">
-              <div class="row g-3">
-                <div class="col-6">
-                  <img src="assets/img/education/education-1.webp" alt="Campus Life" class="img-fluid rounded-3">
-                </div>
-                <div class="col-6">
-                  <img src="assets/img/education/students-3.webp" alt="Student Achievement" class="img-fluid rounded-3">
-                </div>
-                <div class="col-12 mt-3">
-                  <img src="assets/img/education/campus-8.webp" alt="Our Campus" class="img-fluid rounded-3">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-
-    </section><!-- /About Section -->
+    </section><!-- /Contact Section -->
 
   </main>
 

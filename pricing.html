@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Learner Bootstrap Template</title>
+  <title>Pricing - Learner Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -35,7 +35,7 @@
   ======================================================== -->
 </head>
 
-<body class="about-page">
+<body class="pricing-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -49,10 +49,10 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="instructors.html">Instructors</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html" class="active">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -98,114 +98,178 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">About</h1>
+        <h1 class="mb-2 mb-lg-0">Pricing</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li class="current">Pricing</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container pricing-toggle-container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/education/education-square-2.webp" alt="About Us" class="img-fluid rounded-4">
+        <!-- Pricing Toggle -->
+        <div class="pricing-toggle d-flex align-items-center justify-content-center text-center mb-5">
+          <span class="monthly active">Monthly</span>
+          <div class="form-check form-switch d-inline-block mx-3">
+            <input class="form-check-input" type="checkbox" id="pricingSwitch">
+            <label class="form-check-label" for="pricingSwitch"></label>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-content">
-              <span class="subtitle">About Us</span>
-              <h2>Empowering Future Leaders Through Quality Education</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div class="stats-row">
-                <div class="stats-item">
-                  <span class="count">15</span>
-                  <p>Years of Experience</p>
-                </div>
-                <div class="stats-item">
-                  <span class="count">200+</span>
-                  <p>Expert Instructors</p>
-                </div>
-                <div class="stats-item">
-                  <span class="count">50k+</span>
-                  <p>Students Worldwide</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <span class="yearly">Yearly <span class="badge">20% OFF</span></span>
         </div>
 
-        <div class="row mt-5 pt-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-bullseye"></i>
-              </div>
-              <h3>Our Mission</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-eye"></i>
-              </div>
-              <h3>Our Vision</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-award"></i>
-              </div>
-              <h3>Our Values</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-        </div>
+        <!-- Pricing Plans -->
+        <div class="row gy-4 justify-content-center">
 
-        <div class="row mt-5 pt-3 align-items-center">
-          <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
-            <div class="achievements">
-              <span class="subtitle">Why Choose Us</span>
-              <h2>Transforming Education for a Better Tomorrow</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-              <ul class="achievements-list">
-                <li><i class="bi bi-check-circle-fill"></i> Flexible learning options and schedules</li>
-                <li><i class="bi bi-check-circle-fill"></i> Industry-experienced instructors</li>
-                <li><i class="bi bi-check-circle-fill"></i> Interactive and engaging course content</li>
-                <li><i class="bi bi-check-circle-fill"></i> Career guidance and placement support</li>
-                <li><i class="bi bi-check-circle-fill"></i> State-of-the-art online learning platform</li>
-              </ul>
-              <a href="#" class="btn-explore">Discover More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-gallery">
-              <div class="row g-3">
-                <div class="col-6">
-                  <img src="assets/img/education/education-1.webp" alt="Campus Life" class="img-fluid rounded-3">
+          <!-- Basic Plan -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <div class="pricing-header">
+                <h6 class="pricing-category">Basic</h6>
+                <div class="price-wrap">
+                  <h2 class="price">Free</h2>
                 </div>
-                <div class="col-6">
-                  <img src="assets/img/education/students-3.webp" alt="Student Achievement" class="img-fluid rounded-3">
-                </div>
-                <div class="col-12 mt-3">
-                  <img src="assets/img/education/campus-8.webp" alt="Our Campus" class="img-fluid rounded-3">
-                </div>
+                <p class="pricing-description">Lorem ipsum dolor sit</p>
+              </div>
+
+              <div class="pricing-cta">
+                <a href="#" class="btn btn-primary w-100">Continue</a>
+              </div>
+
+              <div class="pricing-features">
+                <h6>Basic Plan Includes:</h6>
+                <ul class="feature-list">
+                  <li><i class="bi bi-check"></i> Lorem ipsum dolor sit amet</li>
+                  <li><i class="bi bi-check"></i> Consectetur adipiscing elit</li>
+                  <li><i class="bi bi-check"></i> Sed do eiusmod tempor</li>
+                  <li><i class="bi bi-check"></i> Incididunt ut labore</li>
+                  <li><i class="bi bi-check"></i> Et dolore magna aliqua</li>
+                  <li><i class="bi bi-check"></i> Ut enim ad minim veniam</li>
+                  <li><i class="bi bi-check"></i> Quis nostrud exercitation</li>
+                  <li><i class="bi bi-check"></i> Ullamco laboris nisi ut</li>
+                  <li><i class="bi bi-check"></i> Aliquip ex ea commodo</li>
+                </ul>
               </div>
             </div>
-          </div>
+          </div><!-- End Basic Plan -->
+
+          <!-- Plus Plan -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item">
+              <div class="pricing-header">
+                <h6 class="pricing-category">Plus</h6>
+                <div class="price-wrap">
+                  <div class="price monthly">
+                    <sup>$</sup>25<span>/m</span>
+                  </div>
+                  <div class="price yearly">
+                    <sup>$</sup>20<span>/m</span>
+                  </div>
+                </div>
+                <p class="pricing-description">Consectetur adipiscing elit</p>
+              </div>
+
+              <div class="pricing-cta">
+                <a href="#" class="btn btn-primary w-100">Buy Now</a>
+              </div>
+
+              <div class="pricing-features">
+                <h6>Everything from <strong>Basic</strong>, plus:</h6>
+                <ul class="feature-list">
+                  <li><i class="bi bi-check"></i> Duis aute irure dolor</li>
+                  <li><i class="bi bi-check"></i> In reprehenderit in voluptate</li>
+                  <li><i class="bi bi-check"></i> Velit esse cillum dolore</li>
+                  <li><i class="bi bi-check"></i> Eu fugiat nulla pariatur</li>
+                  <li><i class="bi bi-check"></i> Excepteur sint occaecat</li>
+                  <li><i class="bi bi-check"></i> Cupidatat non proident</li>
+                  <li><i class="bi bi-check"></i> Sunt in culpa qui officia</li>
+                  <li><i class="bi bi-check"></i> Deserunt mollit anim id</li>
+                  <li><i class="bi bi-check"></i> Est laborum et dolorum</li>
+                  <li><i class="bi bi-check"></i> Fuga eum dicta sunt explicabo</li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End Plus Plan -->
+
+          <!-- Business Plan -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item popular">
+              <div class="popular-badge">Most Popular</div>
+              <div class="pricing-header">
+                <h6 class="pricing-category">Business</h6>
+                <div class="price-wrap">
+                  <div class="price monthly">
+                    <sup>$</sup>45<span>/m</span>
+                  </div>
+                  <div class="price yearly">
+                    <sup>$</sup>36<span>/m</span>
+                  </div>
+                </div>
+                <p class="pricing-description">Sed ut perspiciatis unde</p>
+              </div>
+
+              <div class="pricing-cta">
+                <a href="#" class="btn btn-primary w-100">Buy Now</a>
+              </div>
+
+              <div class="pricing-features">
+                <h6>Everything in <strong>Plus</strong>, plus:</h6>
+                <ul class="feature-list">
+                  <li><i class="bi bi-check"></i> <span class="feature-highlight">Voluptas Sit</span></li>
+                  <li><i class="bi bi-check"></i> Aspernatur aut odit aut fugit</li>
+                  <li><i class="bi bi-check"></i> Sed quia consequuntur</li>
+                  <li><i class="bi bi-check"></i> Magni dolores eos qui</li>
+                  <li><i class="bi bi-check"></i> Ratione voluptatem sequi</li>
+                  <li><i class="bi bi-check"></i> Nesciunt neque porro</li>
+                  <li><i class="bi bi-check"></i> Quisquam est qui dolorem</li>
+                  <li><i class="bi bi-check"></i> Ipsum quia dolor sit amet</li>
+                  <li><i class="bi bi-check"></i> Consectetur adipisci velit</li>
+                  <li><i class="bi bi-check"></i> Sed quia non numquam</li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End Business Plan -->
+
+          <!-- Enterprise Plan -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-item">
+              <div class="pricing-header">
+                <h6 class="pricing-category">Enterprise</h6>
+                <div class="price-wrap">
+                  <h2 class="price">Custom</h2>
+                </div>
+                <p class="pricing-description">Eius modi tempora incidunt</p>
+              </div>
+
+              <div class="pricing-cta">
+                <a href="#" class="btn btn-primary w-100">Contact Sales</a>
+              </div>
+
+              <div class="pricing-features">
+                <h6>Everything in <strong>Business</strong>, plus:</h6>
+                <ul class="feature-list">
+                  <li><i class="bi bi-check"></i> Ipsa quae ab illo inventore</li>
+                  <li><i class="bi bi-check"></i> Veritatis et quasi architecto</li>
+                  <li><i class="bi bi-check"></i> Beatae vitae dicta sunt</li>
+                  <li><i class="bi bi-check"></i> Explicabo nemo enim ipsam</li>
+                  <li><i class="bi bi-check"></i> Voluptatem quia voluptas</li>
+                  <li><i class="bi bi-check"></i> Sit aspernatur aut odit</li>
+                  <li><i class="bi bi-check"></i> Aut fugit sed quia consequuntur</li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- End Enterprise Plan -->
+
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
+    </section><!-- /Pricing Section -->
 
   </main>
 
